@@ -1,0 +1,7 @@
+docker run -dit --restart always -v -n python /mnt/d/Temp/DB_Data:/app python:3.11 bash
+
+# docker 관리자계정 User 등록
+sudo usermod -aG docker ${USER}
+sudo chmod 666 /var/run/docker.sock
+# 권한 확인
+ls -l /var/run/docker.sock
