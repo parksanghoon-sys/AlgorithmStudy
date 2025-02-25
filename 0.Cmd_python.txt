@@ -1,4 +1,4 @@
-docker run -dit --restart always -v -n python /mnt/d/Temp/DB_Data:/app python:3.11 bash
+docker run -dit --restart always -n python -v /mnt/d/Temp/DB_Data:/app python:3.11 bash
 
 # docker 관리자계정 User 등록
 sudo usermod -aG docker ${USER}
